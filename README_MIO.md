@@ -8,6 +8,14 @@ Odoo
 # Paso 1.- Degarga y documentacion del producto.
             https://www.odoo.com/documentation/17.0/es_419/administration/on_premise/source.html
 
+            Odoo Fremework:
+
+            https://www.odoo.com/documentation/17.0/es/developer/reference/frontend.html
+
+            Odoo New Module:
+            https://www.odoo.com/documentation/17.0/th/contributing/development.html
+
+
 # Paso 2.- Clonar el repo de ODOO
 
             este:
@@ -76,12 +84,14 @@ Odoo
         ESTE ES:
         python odoo-bin -r odoo03 -w admin --addons-path=addons -d odoodb02 -i base
 
+
         python odoo-bin.py -r userodo -w admin  -d odoodb -i base 
             (-i base), con i base, se ejecuta una sola vez, porque es para crear las tablas BE CAREFULL!!
 
 # Paso 11.- Levantar el server
 
         python odoo-bin* -r odoo03 -w admin -d odoodb02 
+        python odoo-bin  -r odoo03 -w admin --addons-path=addons -d odoodb02
 
         http://localhost:8069
 
@@ -98,9 +108,31 @@ Odoo
 
 # Paso 13.- Levantar el server (VER PASO 09)
 
+====== Pasos para crear modulos ======
 
+# Paso 14.- Crear y levantar un modulo
 
+python odoo-bin scaffold [nombre del modulo] [nombre de la carpeta donde estara el modulo]
 
+       python odoo-bin scaffold prueba02 modules 
+
+python odoo bin install --add-module /ruta/a/tu/modulo prueba
+
+     python odoo bin install --add-module modules prueba
+    
+# levantar el server con los modulos creados que estan en la carpeta modules
+
+    python odoo-bin -r odoo03 -w admin --addons-path=addons,modules -d odoodb02 
+
+# Paso 15.- Habilitar el modulo de desarrollador de odoo
+
+     En setting colocar:
+        activate the developer mode
+
+     En la barra de taresa superior seleccionar:
+        Update Apps list
+
+    
 
 
 
@@ -160,6 +192,6 @@ https://www.odoo.com/documentation/17.0/es_419/administration/on_premise/source.
 
 Control de Cambio:
 git commit -m "09-12-2024 - Updating the new project"
-
+git commit -m "10-12-2024 - Creating new modules"
 requirements.txt
 source venv/Scripts/activate
