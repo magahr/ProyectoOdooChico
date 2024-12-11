@@ -194,5 +194,6 @@ https://www.odoo.com/documentation/17.0/es_419/administration/on_premise/source.
 Control de Cambio:
 git commit -m "09-12-2024 - Updating the new project"
 git commit -m "10-12-2024 - Creating new modules"
+git commit -m "11-12-2024 - Creating new modules"
 requirements.txt
 source venv/Scripts/activate
