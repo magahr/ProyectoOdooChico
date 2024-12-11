@@ -132,7 +132,8 @@ python odoo bin install --add-module /ruta/a/tu/modulo prueba
      En la barra de taresa superior seleccionar:
         Update Apps list
 
-    
+    http://localhost:8069/web/login
+
 
 
 
