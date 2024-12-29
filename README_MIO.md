@@ -75,7 +75,7 @@ Odoo
 
         pip install -r requirements.txt
 
-# Paso 10.- Crear y actualizar la base de datos
+# Paso 10.- Crear y actualizar la base de datos y levantar el servidor (con -i se crea la db)
 
         Ir a pgadmin y crear la base datos con el usuario super creado anteriormente:
         
@@ -195,5 +195,7 @@ Control de Cambio:
 git commit -m "09-12-2024 - Updating the new project"
 git commit -m "10-12-2024 - Creating new modules"
 git commit -m "11-12-2024 - Creating new modules"
+git commit -m "28-12-2024 - Creating new modules"
+
 requirements.txt
 source venv/Scripts/activate
