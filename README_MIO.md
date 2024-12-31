@@ -209,5 +209,5 @@ git commit -m "31-12-2024 - Updating the new modules, escuela"
 requirements.txt
 source venv/Scripts/activate
 
-voy por el minuto 45:22
+voy por el minuto 51:52  31/12/2024
 
