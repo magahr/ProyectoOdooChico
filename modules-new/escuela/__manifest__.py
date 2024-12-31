@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Modulo de Administracion de Escuela",
+    'name': "Módulo de Administración de Escuela (Escuela)",
 
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 

@@ -53,7 +53,6 @@ Odoo
             Desde la consola Bach:
                 # source .venv/Scripts/activate
                 source venv/Scripts/activate  (sin punto)
-
             Desde la consola de Cmder
                 .venv\Scripts\activate
    
@@ -114,15 +113,22 @@ Odoo
 
 python odoo-bin scaffold [nombre del modulo] [nombre de la carpeta donde estara el modulo]
 
-       python odoo-bin scaffold prueba02 modules 
+     ESTE: ====>  python odoo-bin scaffold escuela modules-new
 
-python odoo bin install --add-module /ruta/a/tu/modulo prueba
+python odoo bin install --add-module /ruta/a/tu/escuela modules-new
 
-     python odoo bin install --add-module modules prueba
+     python odoo bin install --add-module escuela modules-new
     
 # levantar el server con los modulos creados que estan en la carpeta modules
 
-    python odoo-bin -r odoo03 -w admin --addons-path=addons,modules -d odoodb02 
+    python odoo-bin -r dbuser -w dbpassword --addons-path=addons -d mydb
+
+        python odoo-bin -r odoo03 -w admin --addons-path=addons,modules-new -d odoodb02 
+
+    PERO  como utilizo el archivo odoo.conf levantar con todo y modulo sera:
+       (para ello debe estar configurado el archivo odoo.conf con la configuracion)
+        ESTE   ======>>     python odoo-bin -c odoo.conf
+      
 
 # Paso 15.- Habilitar el modulo de desarrollador de odoo
 
@@ -131,6 +137,8 @@ python odoo bin install --add-module /ruta/a/tu/modulo prueba
 
      En la barra de taresa superior seleccionar:
         Update Apps list
+
+      en el sitio de odoo quitar el filtro de app, despues de hacer lo anterior porque sino no se ve el modulo creado
 
     http://localhost:8069/web/login
 
@@ -196,6 +204,10 @@ git commit -m "09-12-2024 - Updating the new project"
 git commit -m "10-12-2024 - Creating new modules"
 git commit -m "11-12-2024 - Creating new modules"
 git commit -m "28-12-2024 - Creating new modules"
+git commit -m "31-12-2024 - Updating the new modules, escuela"
 
 requirements.txt
 source venv/Scripts/activate
+
+voy por el minuto 45:22
+

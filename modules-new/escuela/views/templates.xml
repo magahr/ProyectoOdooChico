@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+<!--
+        <template id="listing">
+          <ul>
+            <li t-foreach="objects" t-as="object">
+              <a t-attf-href="#{ root }/objects/#{ object.id }">
+                <t t-esc="object.display_name"/>
+              </a>
+            </li>
+          </ul>
+        </template>
+        <template id="object">
+          <h1><t t-esc="object.display_name"/></h1>
+          <dl>
+            <t t-foreach="object._fields" t-as="field">
+              <dt><t t-esc="field"/></dt>
+              <dd><t t-esc="object[field]"/></dd>
+            </t>
+          </dl>
+        </template>
+-->
+      <record id="student_tree_view" model="ir.ui.view">
+          <field name="name">student.tree.view</field>
+          <field name="model">escuela.student<field>
+          <field name="arch" type="xml">
+            <tree>
+               <field name="name"/>
+               <field name="age"/>
+            </tree>
+          <field>
+      </record>
+      <record id="student_form_view" model="ir.ui.view">
+          <field name="name">student.tree.view</field>
+          <field name="model">escuela.student<field>
+          <field name="arch" type="xml">
+             <form>
+                <field name="name"/>
+                <field name="age"/>
+             </form>
+          <field>
+      </record>
+      
+
+
+
+
+
+
+    </data>
+</odoo>
