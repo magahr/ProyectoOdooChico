@@ -205,6 +205,7 @@ git commit -m "10-12-2024 - Creating new modules"
 git commit -m "11-12-2024 - Creating new modules"
 git commit -m "28-12-2024 - Creating new modules"
 git commit -m "31-12-2024 - Updating the new modules, escuela"
+git commit -m "25-04-2025 - Review the module"
 
 requirements.txt
 source venv/Scripts/activate
