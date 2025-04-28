@@ -187,11 +187,14 @@ pasos:
 7.- Crear el gitignore
     
 8.- Activar el ambiente virtual
-    source venv/activate
+    source venv/Scripts/activate
 
 
 7.- levantar el server.
     python odoo-bin.py -r userodo -w admin -d odoodb 
+
+    ESTE SIN EL .py
+    python odoo-bin -r userodo -w admin -d odoodb
 
     http://localhost:8040
 
@@ -206,6 +209,7 @@ git commit -m "11-12-2024 - Creating new modules"
 git commit -m "28-12-2024 - Creating new modules"
 git commit -m "31-12-2024 - Updating the new modules, escuela"
 git commit -m "25-04-2025 - Review the module"
+git commit -m "28-04-2025 - Test the server"
 
 requirements.txt
 source venv/Scripts/activate
